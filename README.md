@@ -4,8 +4,7 @@
 
 ## Updates
 
-- 2022/10/12 updates codes
-
+- 2022/10/12 updates codes 🏆
 
 
 ## Prerequisites
