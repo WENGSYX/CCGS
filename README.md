@@ -35,8 +35,8 @@ wget -c https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 sudo chmod 777 Miniconda3-latest-Linux-x86_64.sh 
 bash Miniconda3-latest-Linux-x86_64.sh
 
-conda create -n GlobalSpan python==3.7
-conda activate GlobalSpan
+conda create -n CCGS python==3.7
+conda activate CCGS
 ```
 
 #### Installing Python Libraries
