@@ -1,4 +1,4 @@
-# Global-Span
+# Cross-modal Contrastive Global-Span
 
 
 
