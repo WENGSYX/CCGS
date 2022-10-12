@@ -42,7 +42,7 @@ pip install torch==1.10.0+cu113 torchvision==0.11.1+cu113 torchaudio==0.10.0+cu1
 pip install tqdm transformers sklearn pandas numpy glob accelerate sentencepiece
 ```
 
-### Download Data
+## MedVidCQA
 
 ##### Download the MedVidQA dataset from [here ](mailto:wengsyx@gmail.com?subject=Get%20MedVidCQA%20Dataset)
 
