@@ -99,3 +99,12 @@ python main.py --device 0 \
 -- utils.py
 
 ```
+
+## Cite
+```@article{li2022learning,
+  title={Learning to Locate Visual Answer in Video Corpus Using Question},
+  author={Li, Bin and Weng, Yixuan and Sun, Bin and Li, Shutao},
+  journal={arXiv preprint arXiv:2210.05423},
+  year={2022}
+}
+```
