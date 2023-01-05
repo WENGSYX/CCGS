@@ -20,6 +20,29 @@ train = get_data(r'train.json')
 valid = get_data(r'val.json')
 test = get_data(r'test.json')
 
+def get_iou(start,end,token,step):
+    token = token.tolist()
+    tokens = []
+    ts = []
+
+    t_num = -1
+    for num in range(len(token)):
+        ts.append(token[num])
+        if t_num == start:
+            start_time = valid[step]['video_sub_title'][len(tokens) - 1]['start']
+        if t_num == end:
+            end_time = valid[step]['video_sub_title'][len(tokens) - 1]['start'] + \
+                       valid[step]['video_sub_title'][len(tokens) - 1]['duration']
+        if token[num] == 2:
+            tokens.append(ts)
+            ts = []
+            t_num += 1
+    if start_time >= end_time:
+        end_time = valid[step]['video_sub_title'][-1]['start'] + valid[step]['video_sub_title'][-1]['duration']
+
+    return calculate_iou(i0=[start_time, end_time], i1=[valid[step]["answer_start_second"], valid[step]["answer_end_second"]])
+
+
 questions = [x['question'] for x in train]
 class MyDataset(Dataset):
     def __init__(self, dataframe):
