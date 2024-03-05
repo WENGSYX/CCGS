@@ -1,9 +1,11 @@
 # Cross-modal Contrastive Global-Span
 
 
+This is an implementation of the CCGS code in the Pytorch version. You are free to choose either the [MindSpore version](https://github.com/WENGSYX/Mindspore-for-CCGS) or the PyTorch version!
 
 ## Updates
 
+- 2024/3/5 updates Mindspore version codes!
 - 2022/10/12 updates codes 🏆
 
 ## Main Method
